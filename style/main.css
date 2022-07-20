@@ -13,6 +13,151 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+.container {
+  padding: 0 6rem;
+}
+
+.btn {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
 /* -----------------------------------
     ! default style end
+------------------------------------*/
+
+/* -----------------------------------
+    ! header style start
+------------------------------------*/
+header {
+  padding-top: 2rem;
+}
+.header {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e1e;
+  color: white;
+  border-radius: 30px;
+}
+.left-header {
+  width: 50%;
+  padding-left: 4rem;
+}
+.header-title {
+  font-size: 70px;
+  line-height: 80px;
+}
+.sub-title {
+  margin-bottom: 30px;
+}
+.banner-btn {
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+}
+.fa-angle-right {
+  margin-left: 2px;
+}
+.right-header {
+  width: 50%;
+  height: inherit;
+  text-align: center;
+}
+.banner-img {
+  width: 80%;
+  height: inherit;
+  padding-top: 4rem;
+}
+/* -----------------------------------
+    ! header style end
+------------------------------------*/
+
+/* -----------------------------------
+    ! Media Quary style start
+------------------------------------*/
+/* ! tablet */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+  .container {
+    padding: 0 4rem;
+  }
+  /* ! header responsive start */
+  .header {
+    height: 60vh;
+  }
+  .left-header {
+    padding-left: 2rem;
+  }
+  .header-title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  /* ! header responsive end */
+}
+/* ! phone */
+@media only screen and (max-width: 688px) {
+  .container {
+    padding: 0 2rem;
+  }
+  /* ! header responsive start */
+  .header {
+    height: auto;
+    flex-direction: column;
+  }
+  .left-header {
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  .right-header {
+    width: 100%;
+  }
+  .header-title {
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 0.5rem;
+  }
+  .banner-img {
+    width: 80%;
+    padding-top: 1rem;
+  }
+  .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+  }
+  /* ! header responsive end */
+}
+
+/* -----------------------------------
+    ! Media Quary style end
 ------------------------------------*/
